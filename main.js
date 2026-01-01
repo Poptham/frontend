@@ -84,9 +84,17 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     startFakeProgress();
     try {
-  result.textContent = 'กำลังส่งคำขอ...';
+      result.textContent = 'กำลังส่งคำขอ...';
       const type = document.querySelector('input[name="searchType"]:checked').value;
-      let url = 'http://localhost:5000/api/search';
+      // เลือก base URL อัตโนมัติ (localhost หรือ production)
+      let baseUrl = '';
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        baseUrl = 'http://localhost:5000';
+      } else {
+        // ใส่ URL backend ที่ได้จาก Render.com ตรงนี้
+        baseUrl = 'https://backend-63lq.onrender.com';
+      }
+      let url = baseUrl + '/api/search';
       let category = '';
       if(type === 'cid') category = 'nhso';
       else if(type === 'pea') category = 'pea';
