@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>API Documentation — Digital Service Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="dxc-header">
+    <div class="dxc-brand">
+      <div class="dxc-logo" aria-hidden="true">
+        <img src="https://media.discordapp.net/attachments/1432548491921723443/1455752387670048931/image-removebg-preview.png?ex=6957300f&is=6955de8f&hm=bf77b91d6d64e03f0630e10af920599e1b4fa938f1bcfdb081957c6855b21d5c&=&format=webp&quality=lossless" alt="DSS Logo" style="height: 100px; vertical-align: middle;">
+      </div>
+      <div class="dxc-text">
+        <h1>API Documentation</h1>
+      </div>
+    </div>
+  </header>
+  <div class="dxc-layout">
+    <aside class="dxc-sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html"><span class="sidebar-icon"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2VyLXJvdW5kLXNlYXJjaC1pY29uIGx1Y2lkZS11c2VyLXJvdW5kLXNlYXJjaCI+PGNpcmNsZSBjeD0iMTAiIGN5PSI4IiByPSI1Ii8+PHBhdGggZD0iTTIgMjFhOCA4IDAgMCAxIDEwLjQzNC03LjYyIi8+PGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMyIvPjxwYXRoIGQ9Im0yMiAyMi0xLjktMS45Ii8+PC9zdmc+" alt="Search Icon" style="height: 20px; vertical-align: middle;"></span><span class="sidebar-label">Search Service</span></a></li>
+          <li><a href="docs.html" class="active"><span class="sidebar-icon"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmY2ZjZmMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jbG91ZHktaWNvbiBsdWNpZGUtY2xvdWR5Ij48cGF0aCBkPSJNMTcuNSAyMUg5YTcgNyAwIDEgMSA2LjcxLTloMS43OWE0LjUgNC41IDAgMSAxIDAgOVoiLz48cGF0aCBkPSJNMjIgMTBhMyAzIDAgMCAwLTMtM2gtMi4yMDdhNS41MDIgNS41MDIgMCAwIDAtMTAuNzAyLjUiLz48L3N2Zz4=" alt="Docs Icon" style="height: 20px; vertical-align: middle;"></span><span class="sidebar-label">Docs</span></a></li>
+          <li><a href="#"><span class="sidebar-icon"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmY2ZjZmMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1sb2ctb3V0LWljb24gbHVjaWRlLWxvZy1vdXQiPjxwYXRoIGQ9Im0xNiAxNyA1LTUtNS01Ii8+PHBhdGggZD0iTTIxIDEySDkiLz48cGF0aCBkPSJNOSAyMUg1YTIgMiAwIDAgMS0yLTJWNWEyIDIgMCAwIDEgMi0yaDQiLz48L3N2Zz4=" alt="Logout Icon" style="height: 20px; vertical-align: middle;"></span><span class="sidebar-label">Logout</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="dxc-main">
+      <section class="dxc-card docs-card" id="docs" style="margin-top: 24px;">
+        <h2>API Documentation</h2>
+        <div style="margin-bottom: 16px;">
+          <h3>API Response Status</h3>
+          <table style="border-collapse:collapse;margin-bottom:18px;min-width:320px;">
+            <thead>
+              <tr style="background:#f4f4f4;">
+                <th style="border:1px solid #ccc;padding:6px 12px;">Code</th>
+                <th style="border:1px solid #ccc;padding:6px 12px;">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="border:1px solid #ccc;padding:6px 12px;">200</td>
+                <td style="border:1px solid #ccc;padding:6px 12px;">OK</td>
+              </tr>
+              <tr>
+                <td style="border:1px solid #ccc;padding:6px 12px;">400</td>
+                <td style="border:1px solid #ccc;padding:6px 12px;">ข้อมูลคำขอที่ส่งมาไม่ถูกต้อง</td>
+              </tr>
+              <tr>
+                <td style="border:1px solid #ccc;padding:6px 12px;">401</td>
+                <td style="border:1px solid #ccc;padding:6px 12px;">ไม่มีสิทธิในการใช้งาน</td>
+              </tr>
+              <tr>
+                <td style="border:1px solid #ccc;padding:6px 12px;">404</td>
+                <td style="border:1px solid #ccc;padding:6px 12px;">ไม่พบข้อมูล</td>
+              </tr>
+              <tr>
+                <td style="border:1px solid #ccc;padding:6px 12px;">500</td>
+                <td style="border:1px solid #ccc;padding:6px 12px;">ระบบมีปัญหา</td>
+              </tr>
+            </tbody>
+          </table>
+            <strong style="display:flex;align-items:center;cursor:pointer;" onclick="toggleAccordion('true-api-status', this)">
+              <span style="margin-right:6px;">&#9654;</span> True API:
+            </strong>
+            <pre style="background:#f4f4f4;padding:10px;border-radius:6px;overflow-x:auto;">GET api/search?token={token}&type=phone&value={value}
+  Content-Type: application/json
+  {
+    "param": "value"
+  }</pre>
+              <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;">
+                <input id="true-api-input" type="text" placeholder="เบอร์มือถือ 10 หลัก" style="padding:6px 8px;min-width:180px;">
+                <button onclick="tryItOut('true')" style="padding:6px 14px;cursor:pointer;">Try it out</button>
+                <span id="true-api-url" style="margin-left:10px;color:#1976d2;font-size:13px;"></span>
+              </div>
+            <div id="true-api-status" class="api-status-accordion" style="display:none;margin-top:8px;">
+              <div style="font-weight:bold;">ตัวอย่าง Response:</div>
+              <pre style="background:#e8ffe8;padding:10px;border-radius:6px;overflow-x:auto;">{
+    "status": "success",
+    "type": "phone",
+    "value": "0909466495",
+    ...
+  }</pre>
+              <div style="font-weight:bold;">ตัวอย่าง Error:</div>
+              <pre style="background:#ffe8e8;padding:10px;border-radius:6px;overflow-x:auto;">{
+    "error": "Unauthorized: Invalid or missing API token"
+  }</pre>
+            </div>
+        </div>
+        <div style="margin-bottom: 16px;">
+            <strong style="display:flex;align-items:center;cursor:pointer;" onclick="toggleAccordion('nhso-api-status', this)">
+              <span style="margin-right:6px;">&#9654;</span> Nhso API:
+            </strong>
+            <pre style="background:#f4f4f4;padding:10px;border-radius:6px;overflow-x:auto;margin-bottom:8px;">
+  GET api/search?token={token}&type=pid&value={value}
+  Content-Type: application/json
+  {
+    "param": "value"
+  }
+            </pre>
+              <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;">
+                <input id="nhso-api-input" type="text" placeholder="เลขบัตรประชาชน 13 หลัก" style="padding:6px 8px;min-width:180px;">
+                <button onclick="tryItOut('nhso')" style="padding:6px 14px;cursor:pointer;">Try it out</button>
+                <span id="nhso-api-url" style="margin-left:10px;color:#1976d2;font-size:13px;"></span>
+              </div>
+            <div id="nhso-api-status" class="api-status-accordion" style="display:none;margin-top:8px;">
+              <div style="font-weight:bold;">ตัวอย่าง Response:</div>
+              <pre style="background:#e8ffe8;padding:10px;border-radius:6px;overflow-x:auto;">{
+    "status": "success",
+    "type": "pid",
+    "value": "1234567890123",
+    ...
+  }</pre>
+              <div style="font-weight:bold;">ตัวอย่าง Error:</div>
+              <pre style="background:#ffe8e8;padding:10px;border-radius:6px;overflow-x:auto;">{
+    "error": "ไม่พบข้อมูลจาก NHSO"
+  }</pre>
+            </div>
+        </div>
+        <div style="margin-bottom: 16px;">
+            <strong style="display:flex;align-items:center;cursor:pointer;" onclick="toggleAccordion('pea-api-status', this)">
+              <span style="margin-right:6px;">&#9654;</span> Pea API:
+            </strong>
+            <pre style="background:#f4f4f4;padding:10px;border-radius:6px;overflow-x:auto;margin-bottom:8px;">
+  GET api/search?token={token}&type=pea&value={value}
+  Content-Type: application/json
+  {
+    "param": "value"
+  }
+            </pre>
+              <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;">
+                <input id="pea-api-input" type="text" placeholder="รหัสผู้ใช้ไฟฟ้า" style="padding:6px 8px;min-width:180px;">
+                <button onclick="tryItOut('pea')" style="padding:6px 14px;cursor:pointer;">Try it out</button>
+                <span id="pea-api-url" style="margin-left:10px;color:#1976d2;font-size:13px;"></span>
+              </div>
+            <div id="pea-api-status" class="api-status-accordion" style="display:none;margin-top:8px;">
+              <div style="font-weight:bold;">ตัวอย่าง Response:</div>
+              <pre style="background:#e8ffe8;padding:10px;border-radius:6px;overflow-x:auto;">{
+    "status": "success",
+    "type": "pea",
+    "value": "1234567890",
+    ...
+  }</pre>
+              <div style="font-weight:bold;">ตัวอย่าง Error:</div>
+              <pre style="background:#ffe8e8;padding:10px;border-radius:6px;overflow-x:auto;">{
+    "error": "ไม่พบข้อมูลจาก PEA"
+  }</pre>
+            </div>
+        </div>
+        <div style="margin-bottom: 16px;">
+            <strong style="display:flex;align-items:center;cursor:pointer;" onclick="toggleAccordion('dlt-api-status', this)">
+              <span style="margin-right:6px;">&#9654;</span> Dlt API:
+            </strong>
+            <pre style="background:#f4f4f4;padding:10px;border-radius:6px;overflow-x:auto;margin-bottom:8px;">
+  GET api/search?token={token}&type=dlt&value={value}
+  Content-Type: application/json
+  {
+    "param": "value"
+  }
+            </pre>
+              <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;">
+                <input id="dlt-api-input" type="text" placeholder="เลขทะเบียนรถ" style="padding:6px 8px;min-width:180px;">
+                <button onclick="tryItOut('dlt')" style="padding:6px 14px;cursor:pointer;">Try it out</button>
+                <span id="dlt-api-url" style="margin-left:10px;color:#1976d2;font-size:13px;"></span>
+              </div>
+            <div id="dlt-api-status" class="api-status-accordion" style="display:none;margin-top:8px;">
+              <div style="font-weight:bold;">ตัวอย่าง Response:</div>
+              <pre style="background:#e8ffe8;padding:10px;border-radius:6px;overflow-x:auto;">{
+    "status": "success",
+    "type": "dlt",
+    "value": "1กข1234",
+    ...
+  }</pre>
+              <div style="font-weight:bold;">ตัวอย่าง Error:</div>
+              <pre style="background:#ffe8e8;padding:10px;border-radius:6px;overflow-x:auto;">{
+    "error": "ไม่พบข้อมูลจาก DLT"
+  }</pre>
+            </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+  <script>
+    function toggleAccordion(id, strongEl) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
+      // เปลี่ยนลูกศร
+      var arrow = strongEl.querySelector('span');
+      if (el.style.display === 'block') {
+        arrow.innerHTML = '&#9660;'; // ลูกศรลง
+      } else {
+        arrow.innerHTML = '&#9654;'; // ลูกศรขวา
+      }
+    }
+      function tryItOut(type) {
+        var token = 'mysecrettoken';
+        if(type === 'true') {
+          var value = document.getElementById('true-api-input').value.trim();
+          var url = value ? `http://localhost:5000/api/search?token=$your_token&type=phone&value=${encodeURIComponent(value)}` : '';
+          document.getElementById('true-api-url').textContent = url;
+        } else if(type === 'nhso') {
+          var value = document.getElementById('nhso-api-input').value.trim();
+          var url = value ? `http://localhost:5000/api/search?token=$your_token&type=pid&value=${encodeURIComponent(value)}` : '';
+          document.getElementById('nhso-api-url').textContent = url;
+        } else if(type === 'pea') {
+          var value = document.getElementById('pea-api-input').value.trim();
+          var url = value ? `http://localhost:5000/api/search?token=$your_token&type=pea&value=${encodeURIComponent(value)}` : '';
+          document.getElementById('pea-api-url').textContent = url;
+        } else if(type === 'dlt') {
+          var value = document.getElementById('dlt-api-input').value.trim();
+          var url = value ? `http://localhost:5000/api/search?token=$your_token&type=dlt&value=${encodeURIComponent(value)}` : '';
+          document.getElementById('dlt-api-url').textContent = url;
+        }
+      }
+  </script>
+    <small>ติดต่อเช่า API Token ที่ <a href="#">Docs</a></small>
+  </footer>
+</body>
+</html>

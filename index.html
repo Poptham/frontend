@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Service Search — ค้นหาบริการดิจิทัล</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="dxc-header">
+    <div class="dxc-brand">
+      <div class="dxc-logo" aria-hidden="true">
+  <img src="https://media.discordapp.net/attachments/1432548491921723443/1455752387670048931/image-removebg-preview.png?ex=6957300f&is=6955de8f&hm=bf77b91d6d64e03f0630e10af920599e1b4fa938f1bcfdb081957c6855b21d5c&=&format=webp&quality=lossless" alt="DSS Logo" style="height: 100px; vertical-align: middle;">
+      </div>
+      <div class="dxc-text">
+        <h1>Service Search</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="dxc-layout">
+    <!-- Sidebar ด้านซ้าย -->
+    <aside class="dxc-sidebar">
+      <nav>
+        <ul>
+          <li><a href="#" class="active"><span class="sidebar-icon"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2VyLXJvdW5kLXNlYXJjaC1pY29uIGx1Y2lkZS11c2VyLXJvdW5kLXNlYXJjaCI+PGNpcmNsZSBjeD0iMTAiIGN5PSI4IiByPSI1Ii8+PHBhdGggZD0iTTIgMjFhOCA4IDAgMCAxIDEwLjQzNC03LjYyIi8+PGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMyIvPjxwYXRoIGQ9Im0yMiAyMi0xLjktMS45Ii8+PC9zdmc+" alt="Search Icon" style="height: 20px; vertical-align: middle;"></span><span class="sidebar-label">Search Service</span></a></li>
+          <li><a href="docs.html" id="docs-tab"><span class="sidebar-icon"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmY2ZjZmMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jbG91ZHktaWNvbiBsdWNpZGUtY2xvdWR5Ij48cGF0aCBkPSJNMTcuNSAyMUg5YTcgNyAwIDEgMSA2LjcxLTloMS43OWE0LjUgNC41IDAgMSAxIDAgOVoiLz48cGF0aCBkPSJNMjIgMTBhMyAzIDAgMCAwLTMtM2gtMi4yMDdhNS41MDIgNS41MDIgMCAwIDAtMTAuNzAyLjUiLz48L3N2Zz4=" alt="Docs Icon" style="height: 20px; vertical-align: middle;"></span><span class="sidebar-label">Docs</span></a></li>
+          <li><a href="#"><span class="sidebar-icon"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmY2ZjZmMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1sb2ctb3V0LWljb24gbHVjaWRlLWxvZy1vdXQiPjxwYXRoIGQ9Im0xNiAxNyA1LTUtNS01Ii8+PHBhdGggZD0iTTIxIDEySDkiLz48cGF0aCBkPSJNOSAyMUg1YTIgMiAwIDAgMS0yLTJWNWEyIDIgMCAwIDEgMi0yaDQiLz48L3N2Zz4=" alt="Logout Icon" style="height: 20px; vertical-align: middle;"></span><span class="sidebar-label">Logout</span></a></li>
+        </ul>
+      </nav>  
+    </aside>
+
+    <!-- เนื้อหาหลัก -->
+    <main class="dxc-main">
+  <section class="dxc-card search-card tab-content" id="tab-search" aria-labelledby="search-title">
+        <h2 id="search-title">Digital Service Search (ค้นหาบริการดิจิทัล)</h2>
+        <form id="searchForm" class="search-form" novalidate>
+          <fieldset class="choose-type">
+            <legend class="sr-only">ประเภทการค้นหา</legend>
+            <label>
+              <input type="radio" name="searchType" value="cid" checked>
+              <img src="https://ossregister.nhso.go.th/assets/images/nhso.png" alt="NHSO Icon" style="height: 20px; vertical-align: middle; margin-right: 4px;">NHSO
+            </label>
+            <label>
+              <input type="radio" name="searchType" value="phone">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/True_Corporation_%28Thailand%29.svg/1200px-True_Corporation_%28Thailand%29.svg.png" alt="TrueMove H Icon" style="height: 20px; vertical-align: middle; margin-right: 4px;">TrueMove H
+            </label>
+
+            <input type="radio" name="searchType" value="pea" id="radio-pea"> <label for="radio-pea"><img src="https://www.peachannel.com/portal/images/pea-logo.png" alt="PEA Icon" style="height: 20px; vertical-align: middle; margin-right: 4px;">PEA (การไฟฟ้า)</label>
+            <input type="radio" name="searchType" value="shipmile" id="radio-shipmile"> <label for="radio-shipmile"><img src="https://datagov.mot.go.th/uploads/group/2020-10-16-021345.9868641200px-SealoftheDepartmentofLandTransportofThailand.svg.png" alt="Shipmile Icon" style="height: 20px; vertical-align: middle; margin-right: 4px;">DLT (กรมการขนส่ง)</label>
+          </fieldset>
+          <div class="field">
+            <label for="query">เลขที่/หมายเลข</label>
+            <input id="query" name="query" type="text" inputmode="numeric" placeholder="กรอกเลขบัตร 13 หลัก หรือเบอร์มือถือ" aria-describedby="hint">
+            <small id="hint" class="hint">ไม่ต้องใส่ขีดหรือตัวอักษรอื่น</small>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn primary" id="searchBtn">ค้นหา</button>
+            <button type="reset" class="btn">รีเซ็ต</button>
+          </div>
+        </form>
+      </section>
+
+  <section class="dxc-card result-card tab-content" id="tab-result" aria-live="polite" aria-labelledby="result-title">
+        <h3 id="result-title">ผลลัพธ์</h3>
+        <div id="result-wrapper" style="display:flex;align-items:center;gap:10px;">
+          <div id="result" class="result-empty">ยังไม่มีการค้นหา</div>
+          <span id="progress-percent" style="color:#6366f1;font-weight:bold;"></span>
+        </div>
+        <div class="table-responsive">
+          <table class="result-table">
+            <thead>
+              <tr>
+                <th>ลำดับ</th>
+                <th>ข้อมูลที่ค้นหา</th>
+                <th>สถานะ</th>
+                <th>หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody id="result-table-body">
+              <!-- ผลลัพธ์จะถูกเติมด้วย JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <small>ติดต่อเช่า API Token ที่ <a href="#">Docs</a></small>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
